@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react';
+import HitsList from '../components/HitsList';
 
 const HitsContainer = () => {
 
@@ -15,7 +16,11 @@ const HitsContainer = () => {
   }, [])
 
   return (
-    <h2>HitsContainer</h2>
+    <>
+      <h2>HitsContainer</h2>
+      <HitsList />
+    </>
+
   )
 }
 
