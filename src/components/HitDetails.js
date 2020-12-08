@@ -1,6 +1,16 @@
-const HitDetails = () => {
+const HitDetails = ({position, artist, track}) => {
   return (
-    <h2>Hit Details</h2>
+    <>
+      <p>
+        Position: {position + 1}
+      </p>
+      <p>
+        Artist: {artist}
+      </p>
+      <p>
+        Track: {track}
+      </p>
+    </>
   )
 }
 

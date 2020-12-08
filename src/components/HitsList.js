@@ -1,10 +1,21 @@
 import HitDetails from './HitDetails';
 
-const HitsList = () => {
+const HitsList = ({hits}) => {
+
+  if (!hits) {
+    return null;
+  }
+  const hitElements = hits.map(hit => {
+    return (
+      <HitDetails position={hit.position} artist={hit.artist} track={hit.track} />
+    )
+  })
+
+
+
   return (
     <>
-      <h1>HitsList</h1>
-      <HitDetails />
+      {hitElements}
     </>
 
   )
