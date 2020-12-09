@@ -1,0 +1,36 @@
+li {
+  list-style: none;
+}
+
+.single-track {
+  display: grid;
+  grid-template-columns: 10% 30% 60%;
+  grid-template-areas:
+    "position thumbnail song-details"
+  ;
+  align-items: center;
+  border: solid black 2px;
+  margin-bottom: 1em;
+}
+
+.position {
+  grid-area: position;
+  justify-self: center;
+}
+
+.thumbnail {
+  grid-area: thumbnail;
+  justify-self: center;
+}
+
+.artist {
+  grid-area: artist;
+}
+
+.track {
+  grid-area: track;
+}
+
+.song-details {
+  grid-area: song-details;
+}
